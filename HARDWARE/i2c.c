@@ -27,7 +27,7 @@ void IIC_Start(void)
 	delay_us(4);
  	IIC_SDA=0;//START:when CLK is high,DATA change form high to low 
 	delay_us(4);
-	IIC_SCL=0;//钳住I2C总线，准备发送或接收数据 
+	IIC_SCL=0;//准备发送或接收数据 
 }
 
 //产生IIC停止信号
@@ -97,7 +97,7 @@ void IIC_Send_Byte(u8 txd)
     {
         IIC_SDA=(txd&0x80)>>7;
         txd<<=1; 
-				delay_us(2);   //对TEA5767这三个延时都是必须的
+				delay_us(2);
 				IIC_SCL=1;
 				delay_us(2);
 				IIC_SCL=0;
