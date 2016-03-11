@@ -67,7 +67,7 @@ void uart_init(u32 bound){
 	
 	/* USART2 配置 */
 	RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA , ENABLE); //使能GPIOA时钟
-	RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE); //使能USART1时钟
+	RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE); //使能USART2时钟
  
 	//串口2对应引脚复用映射
 	GPIO_PinAFConfig(GPIOA, GPIO_PinSource2, GPIO_AF_USART2);   //  TX
@@ -102,7 +102,7 @@ void uart_init(u32 bound){
 	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=3;//抢占优先级3
 	NVIC_InitStructure.NVIC_IRQChannelSubPriority =3;		//子优先级3
 	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;			//IRQ通道使能
-	NVIC_Init(&NVIC_InitStructure);	//根据指定的参数初始化VIC寄存器、
+	NVIC_Init(&NVIC_InitStructure);	//根据指定的参数初始化NVIC寄存器、
 
 #endif
 
