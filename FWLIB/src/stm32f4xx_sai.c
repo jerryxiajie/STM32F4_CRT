@@ -470,7 +470,7 @@ void SAI_MonoModeConfig(SAI_Block_TypeDef* SAI_Block_x, uint32_t SAI_Mono_StreoM
 }
 
 /**
-  * @brief  Configures the TRIState managment on data line for the selected SAI block.
+  * @brief  Configures the TRIState management on data line for the selected SAI block.
   * 
   * @note  This function has a meaning only when the SAI block is configured in transmitter 
   *      

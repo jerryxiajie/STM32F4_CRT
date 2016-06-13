@@ -1616,10 +1616,10 @@ ErrorStatus RTC_WakeUpCmd(FunctionalState NewState)
   */
 
 /**
-  * @brief  Adds or substract one hour from the current time.
+  * @brief  Adds or subtract one hour from the current time.
   * @param  RTC_DayLightSaveOperation: the value of hour adjustment. 
   *          This parameter can be one of the following values:
-  *            @arg RTC_DayLightSaving_SUB1H: Substract one hour (winter time)
+  *            @arg RTC_DayLightSaving_SUB1H: Subtract one hour (winter time)
   *            @arg RTC_DayLightSaving_ADD1H: Add one hour (summer time)
   * @param  RTC_StoreOperation: Specifies the value to be written in the BCK bit 
   *                            in CR register to store the operation.
