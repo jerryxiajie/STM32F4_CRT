@@ -29,7 +29,7 @@
           data formats, Circular or Normal mode, Stream Priority level, Source and Destination 
           Incrementation mode, FIFO mode and its Threshold (if needed), Burst 
           mode for Source and/or Destination (if needed) using the DMA_Init() function.
-          To avoid filling unneccessary fields, you can call DMA_StructInit() function
+          To avoid filling unnecessary fields, you can call DMA_StructInit() function
           to initialize a given structure with default values (reset values), the modify
           only necessary fields 
           (ie. Source and Destination addresses, Transfer size and Data Formats).
